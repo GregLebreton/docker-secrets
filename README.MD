@@ -1,7 +1,5 @@
       ###### docker-secrets ######
       
-      
-# processus
 
   A) création des secrets:
   
