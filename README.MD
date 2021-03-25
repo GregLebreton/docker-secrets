@@ -1,7 +1,10 @@
                               ###### docker-secrets ######
-      
+ 
+  A) initialiser docker swarm
+  
+      $ docker swarm init
 
-  A) création des secrets:
+  B) création des secrets:
   
       $ echo "myuser" | sudo docker secret create pg_user -
 
@@ -10,10 +13,10 @@
       $ echo "mydatabase" | sudo docker secret create pg_database -
       
       
-  B) déployement du service:
+  C) déployement du service:
   
       $ docker stack deploy -c docker-postgres-secrets.yml postgres-secret
       
-  C) visiter http://127.0.0.1:8080 et choisir le type postgres dans le menu déroulant
+  D) visiter http://127.0.0.1:8080 et choisir le type postgres dans le menu déroulant
   
-  D) utiliser les acréditations passées dans les secrets pour vous connectez à la base de donnée
+  E) utiliser les acréditations passées dans les secrets pour vous connectez à la base de donnée
