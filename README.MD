@@ -3,11 +3,11 @@
 
   A) création des secrets:
   
-      $ echo "myuser" | docker secret create pg_user -
+      $ echo "myuser" | sudo docker secret create pg_user -
 
-      $ echo "mysupersecretpassword" | docker secret create pg_password -
+      $ echo "mysupersecretpassword" | sudo docker secret create pg_password -
 
-      $ echo "mydatabase" | docker secret create pg_database -
+      $ echo "mydatabase" | sudo docker secret create pg_database -
       
       
   B) déployement du service:
